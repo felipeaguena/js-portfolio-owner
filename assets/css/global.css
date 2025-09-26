@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css2?family=Google+Sans+Code:ital,wght@0,300..800;1,300..800&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+* {
+   box-sizing: border-box;
+}
+
+h1, h2 {
+   font-family: "Google Sans Code";
+}
+
+p, ul, li, a, h3, h4, h5, h6 {
+   font-family: "Inter";
+   list-style: none;
+   text-decoration: none;
+   padding: 0;
+   margin: 0;
+}
+
+p, li {
+   font-size: 0.85rem;
+}
+
+h4 {
+   padding: 15px 0 10px 0;
+}
+
+body {
+ padding: 50px;
+ background-color: black;
+ color: white;
+}
+
+.container {
+   border: 1px solid #dddddd;
+   border-radius: 1rem;
+   max-width: 700px;
+   justify-content: center;
+   margin: auto;
+   padding: 50px;
+   position: relative;
+}
+
+.container::after {
+   content: "";
+   background: url("/assets/icon/btn-detalhe.svg");
+   background-size: contain;
+   background-repeat: no-repeat;
+   position: absolute;
+   top: 20px;
+   right: 20px;
+   width: 50px;
+   height: 10px;
+}
+
+header {
+   display: grid;
+   grid-template-columns: repeat(2, 1fr);
+   max-width: 600px;
+}
+
+.perfil {
+   max-width: 250px;
+   border-radius: 50%;
+}
+
+.icon {
+   width: 1rem;
+   max-height: 1rem;
+   margin-right: 15px;
+   display: inline-block;
+}
+
+.contato {
+   margin: 10px;
+
+}
+
+.accordion {
+   background: transparent;
+   /* background: linear-gradient(#55569e00, #252644); */
+   border: 1px solid #dddddd;
+   border-radius: 1rem;
+   max-width: 700px;
+   position: relative;
+   transition: all .3s ease-in-out;
+   margin: 10px 0;
+}
+
+.accordion.open,
+.accordion:hover {
+   background: #55569E;
+   /* background: linear-gradient(#55569E, #252644); */
+   border: 1px solid #55569E;
+}
+
+.trigger {
+   max-width: 600px;
+   padding: 0px 20px;
+   cursor: pointer;
+}
+
+.trigger::after {
+   content: "";
+   background: url("/assets/icon/trigger.svg");
+   background-size: contain;
+   position: absolute;
+   width: 2rem;
+   height: 2rem;
+   right: 1.5rem;
+   transition: .25s;
+}
+
+.content {
+   padding: 0 20px 20px 20px;
+}
+
+.accordion .content {
+   display: none;
+}
+
+
+
+.idioma {
+   display: flex;
+   justify-content: space-between;
+   margin: auto;
+   max-width: 500px;
+   gap: 20px;
+}
+
+.idioma li {
+   align-items: center;
+}
+
+.accordion.open .trigger::after {
+   transform: rotate(180deg);
+}
+
+.accordion.open .content {
+   display: inline-block;
+}
+
+.skills {
+   display: flex;
+   flex-direction: row;
+   gap: 20px;
+}
+
+.skills-icon {
+   max-width: 50px;
+
+}
+
+.skills-soft .skills {
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+
+   & li::before {
+      content: "- ";
+   }
+}
+
+.educacao img {
+   max-width: 500px;
+   margin: auto;
+}
+
+.github-icon {
+   position: relative;
+   margin-left: 25px;
+}
+
+.github-icon::before {
+   content: "";
+   background-image: url("/assets/icon/github.svg");
+   background-size: cover;
+   position: absolute;
+   top: 13px;
+   left: 0;
+   width: 15px;
+   height: 15px;
+   margin-left: -25px;
+}
+
+.xp {
+   padding: 10px 0;
+}
+
+.data {
+   font-size: 0.75rem;
+   font-weight: 300;
+}
+
+.calendar-icon {
+   max-width: 10px;
+   margin-right: 10px;
+}
+
+.logo-dio-footer {
+   display: flex;
+   justify-content: right;
+   
+   & img {
+      width: 100px;
+      
+   }
+}
