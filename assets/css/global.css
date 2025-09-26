@@ -148,7 +148,7 @@ header {
 
 .skills-icon {
    max-width: 50px;
-
+   max-height: 50px;
 }
 
 .skills-soft .skills {

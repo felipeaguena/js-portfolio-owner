@@ -6,7 +6,7 @@
    "phone": "+351 912-345-678",
    "email": "guenas@gmail.com",
    "skills": {
-   "hardSkills": [
+    "hardSkills": [
       {
         "name": "Nodejs",
         "logo": "https://raw.githubusercontent.com/digitalinnovationone/js-developer-portfolio/main/data/imgs/nodejs.png"
@@ -31,7 +31,7 @@
         "name": "Postgresql",
         "logo": "https://raw.githubusercontent.com/digitalinnovationone/js-developer-portfolio/main/data/imgs/postgresql.png"
       }
-   ],
+  ],
       "softSkills": [
       "Empatia",
       "Liderança",
