@@ -50,7 +50,7 @@ body {
 
 .container::after {
    content: "";
-   background: url("assets/icon/btn-detalhe.svg");
+   background: url("/assets/icon/btn-detalhe.svg");
    background-size: contain;
    background-repeat: no-repeat;
    position: absolute;
@@ -109,7 +109,7 @@ header {
 
 .trigger::after {
    content: "";
-   background: url("assets/icon/trigger.svg");
+   background: url("/assets/icon/trigger.svg");
    background-size: contain;
    position: absolute;
    width: 2rem;
@@ -181,7 +181,7 @@ header {
 
 .github-icon::before {
    content: "";
-   background-image: url("assets/icon/github.svg");
+   background-image: url("/assets/icon/github.svg");
    background-size: cover;
    position: absolute;
    top: 13px;
