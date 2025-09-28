@@ -181,7 +181,7 @@ header {
 
 .github-icon::before {
    content: "";
-   background-image: url("/assets/icon/github.svg");
+   background-image: url("../icon/github.svg");
    background-size: cover;
    position: absolute;
    top: 13px;
