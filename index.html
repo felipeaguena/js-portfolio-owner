@@ -6,20 +6,20 @@
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>Portfólio Felipe Alves Aguena</title>
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-   <link rel="stylesheet" href="/assets/css/global.css">
+   <link rel="stylesheet" href="assets/css/global.css">
 </head>
 
 <body>
    <div class="container">
       <header>
          <img class="perfil" src="" alt="" id="profile.photo">
-         <div>
+         <div class="info-contact">
             <h1>Olá, <br>eu sou o <span id="profile.name">Carregando...</span></h1>
             <ul>
-               <li class="contato"><img class="icon" src="/assets/icon/user.svg"><span id="profile.job">Carregando...</span></li>
-               <li class="contato"><img class="icon" src="/assets/icon/map.svg"><span id="profile.location">Carregando...</span></li>
-               <li class="contato"><img class="icon" src="/assets/icon/whatsapp.svg"><span id="profile.phone">Carregando...</span></li>
-               <li class="contato"><img class="icon" src="/assets/icon/mail.svg"><span id="profile.email">Carregando...</span></li>
+               <li class="contato"><img class="icon" src="assets/icon/user.svg"><span id="profile.job">Carregando...</span></li>
+               <li class="contato"><img class="icon" src="assets/icon/map.svg"><span id="profile.location">Carregando...</span></li>
+               <li class="contato"><img class="icon" src="assets/icon/whatsapp.svg"><span id="profile.phone">Carregando...</span></li>
+               <li class="contato"><img class="icon" src="assets/icon/mail.svg"><span id="profile.email">Carregando...</span></li>
             </ul>
          </div>
       </header>
@@ -28,22 +28,11 @@
          <div class="content">
             <div class="skills-pro">
                <h4>Habilidades Profissionais:</h4>
-               <ul class="skills" id="profile.skills.hardSkills">
-                  <!-- <li><img class="skills-icon" src="/assets/icon/js.svg" alt=""></li>
-                  <li><img class="skills-icon" src="/assets/icon/nodejs.svg" alt=""></li>
-                  <li><img class="skills-icon" src="/assets/icon/python.svg" alt=""></li>
-                  <li><img class="skills-icon" src="/assets/icon/github.svg" alt=""></li> -->
-               </ul>
+               <ul class="skills" id="profile.skills.hardSkills"></ul>
             </div>
             <div class="skills-soft">
                <h4>Habilidades Pessoais:</h4>
-               <ul class="skills" id="profile.skills.softSkills">
-                  <!-- <li>Facilidade com tarefas práticas</li>
-                  <li>Comunicação</li>
-                  <li>Trabalho em Equipe</li>
-                  <li>Organização</li>
-                  <li>Comprometimento com resultados</li> -->
-               </ul>
+               <ul class="skills" id="profile.skills.softSkills"></ul>
             </div>
          </div>
       </section>
@@ -51,75 +40,27 @@
       <section class="accordion">
          <h2 class="trigger">Idiomas</h2>
          <div class="content">
-            <ul class="idioma" id="profile.idioma">
-               <!-- <li><img class="icon" src="/assets/icon/check-double-line.svg" alt=""> Portugues</li>
-               <li><img class="icon" src="/assets/icon/check-double-line.svg" alt=""> Inglês</li>
-               <li><img class="icon" src="/assets/icon/check-double-line.svg" alt=""> Espanhol</li> -->
-            </ul>
-         </div>
-      </section>
-      <section class="accordion">
-         <h2 class="trigger">Educação</h2>
-         <div class="content">
-            <div class="educacao title">
-               <h4>Minhas conquistas na DIO</h4>
-               <img src="/assets/icon/education.svg" alt="">
-               <h4>dio.me</h4>
-               <p>Web Development! All i need to know in one place</p>
-               <h4>UNESP - Graduação em tecnologia da informação</h4>
-               <p>Bauru - 2015</p>
-               <h4>Curso de UX design</h4>
-               <p>Bauru - 2014</p>
-            </div>
+            <ul class="idioma" id="profile.idioma"></ul>
          </div>
       </section>
       <section class="accordion">
          <h2 class="trigger">Portfólio</h2>
          <div class="content">
-            <ul class="portfolio" id="profile.portfolio">
-               <!-- <li>
-                  <h4 class="github-icon">Criando um App de lembrete</h4>
-                  <p>https://www.dio.me/Coffee-Talk-Java-and-Opinions/GitHub-URL-find-use-example</p>
-               </li>
-               <li>
-                  <h4 class="github-icon">Layout Uber</h4>
-                  <p>https://www.dio.me/Coffee-Talk-Java-and-Opinions/GitHub-URL-find-use-example</p>
-               </li>
-               <li>
-                  <h4 class="github-icon">Criando Front-end com React</h4>
-                  <p>https://www.dio.me/Coffee-Talk-Java-and-Opinions/GitHub-URL-find-use-example</p>
-               </li> -->
-            </ul>
+            <ul class="portfolio" id="profile.portfolio"></ul>
          </div>
       </section>
       <section class="accordion">
          <h2 class="trigger">Experiência Profissional</h2>
          <div class="content">
-            <ul class="xp" id="profile.xp">
-               <!-- <li>
-                  <h4>Front-end Developer  / dio.me</h4>
-                  <img src="/assets/icon/calendar.svg" alt="icone de calendario" class="calendar-icon"><span class="data">Jan 2020 - Current</span>
-                  <p>Lorem ipsum dolor sit amet. Praesentium magnam consectetur vel in deserunt aspernatur est reprehenderit sunt hic. Nulla tempora soluta ea et odio, unde doloremque repellendus iure, iste.</p>
-               </li>
-               <li>
-                  <h4>Front-end Developer  / Philips</h4>
-                  <img src="/assets/icon/calendar.svg" alt="icone de calendario" class="calendar-icon"><span class="data">Jan 2017 - 2020</span>
-                  <p>Lorem ipsum dolor sit amet. Praesentium magnam consectetur vel in deserunt aspernatur est reprehenderit sunt hic. Nulla tempora soluta ea et odio, unde doloremque repellendus iure, iste.</p>
-               </li>
-               <li>
-                  <h4>UX designer/ dio.me</h4>
-                  <img src="/assets/icon/calendar.svg" alt="icone de calendario" class="calendar-icon"><span class="data">Jan 2017 - 2020</span>
-                  <p>Lorem ipsum dolor sit amet. Praesentium magnam consectetur vel in deserunt aspernatur est reprehenderit sunt hic. Nulla tempora soluta ea et odio, unde doloremque repellendus iure, iste.</p>
-               </li> -->
-            </ul>
+            <ul class="xp" id="profile.xp"></ul>
          </div>
       </section>
       <div class="logo-dio-footer">
-      <img src="/assets/icon/dio-logo.svg" alt="">
+      <img src="assets/icon/dio-logo.svg" alt="">
       </div>
    </div>
-   <script src="/assets/js/api.js"></script>
-   <script src="/assets/js/main.js"></script>
-   <script src="/assets/js/acordeon.js"></script>
+   <script src="assets/js/api.js"></script>
+   <script src="assets/js/main.js"></script>
+   <script src="assets/js/acordeon.js"></script>
 </body>
 </html>

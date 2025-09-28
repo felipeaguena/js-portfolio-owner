@@ -31,7 +31,7 @@ function updateSoftSkills(profileData) {
 
 function updateLanguages(profileData) {
    const languages = document.getElementById('profile.idioma')
-   languages.innerHTML = profileData.languages.map(languages => `<li><img class="icon" src="/assets/icon/check-double-line.svg" alt=""> ${languages}</li>`).join('')
+   languages.innerHTML = profileData.languages.map(languages => `<li><img class="icon" src="assets/icon/check-double-line.svg" alt=""> ${languages}</li>`).join('')
 }
 
 function updatePortfolio (profileData) {
@@ -45,7 +45,7 @@ function updateProfessionalExperience(profileData) {
    xp.innerHTML = profileData.professionalExperience.map(professionalExperience => `               
       <li>
          <h4>${professionalExperience.name}</h4>
-         <img src="/assets/icon/calendar.svg" alt="icone de calendario" class="calendar-icon"><span class="data">${professionalExperience.period}</span>
+         <img src="assets/icon/calendar.svg" alt="icone de calendario" class="calendar-icon"><span class="data">${professionalExperience.period}</span>
          <p>${professionalExperience.description}</p>
       </li>`).join('');
 }

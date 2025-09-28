@@ -16,6 +16,10 @@ p, ul, li, a, h3, h4, h5, h6 {
    margin: 0;
 }
 
+a {
+   color: #dddddd;
+}
+
 p, li {
    font-size: 0.85rem;
 }
@@ -30,6 +34,10 @@ body {
  color: white;
 }
 
+.info-contact {
+   padding: 0 20px;
+}
+
 .container {
    border: 1px solid #dddddd;
    border-radius: 1rem;
@@ -42,7 +50,7 @@ body {
 
 .container::after {
    content: "";
-   background: url("/assets/icon/btn-detalhe.svg");
+   background: url("assets/icon/btn-detalhe.svg");
    background-size: contain;
    background-repeat: no-repeat;
    position: absolute;
@@ -59,7 +67,7 @@ header {
 }
 
 .perfil {
-   max-width: 250px;
+   max-height: 300px;
    border-radius: 50%;
 }
 
@@ -101,7 +109,7 @@ header {
 
 .trigger::after {
    content: "";
-   background: url("/assets/icon/trigger.svg");
+   background: url("assets/icon/trigger.svg");
    background-size: contain;
    position: absolute;
    width: 2rem;
@@ -122,6 +130,7 @@ header {
 
 .idioma {
    display: flex;
+   flex-wrap: wrap;
    justify-content: space-between;
    margin: auto;
    max-width: 500px;
@@ -172,7 +181,7 @@ header {
 
 .github-icon::before {
    content: "";
-   background-image: url("/assets/icon/github.svg");
+   background-image: url("assets/icon/github.svg");
    background-size: cover;
    position: absolute;
    top: 13px;
@@ -203,5 +212,49 @@ header {
    & img {
       width: 100px;
       
+   }
+}
+
+
+@media (max-width: 800px) {
+   h1 {
+      font-size: 2rem;
+   }
+
+   .perfil{
+      max-width: 200px;
+      margin: 20px;
+   }
+}
+
+@media (max-width: 600px) {
+   body {
+      padding: 10px;
+   }
+   header {
+      display: grid;
+      grid-template-columns: 1fr;
+      max-width: 600px;
+      justify-content: center;
+      margin: auto;
+   }
+
+   .perfil{
+      max-width: 250px;
+      margin: 20px;
+   }
+
+   .skills-icon {
+      max-width: 30px;
+      max-height: 30px;
+   }
+
+   .idioma {
+      display: grid;
+      grid-template-columns: 1fr;
+   }
+
+   .container {
+      padding: 20px;
    }
 }
